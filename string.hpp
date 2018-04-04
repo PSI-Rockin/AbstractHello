@@ -1,14 +1,18 @@
 #ifndef STRING_HPP
 #define STRING_HPP
 #include "abstractobject.hpp"
-#include "character.hpp"
+#include "alphabet.hpp"
+#include "number.hpp"
 
 class String : public AbstractObject
 {
     private:
-        Character** iLikeJava;
+        Character** string;
+        Number len;
     public:
         String(const char* bark);
+
+        void print();
 };
 
 #endif // STRING_HPP
