@@ -8,11 +8,21 @@ HEADERS += \
     h.hpp \
     e.hpp \
     l.hpp \
-    alphabet.hpp
+    alphabet.hpp \
+    o.hpp \
+    w.hpp \
+    space.hpp \
+    r.hpp \
+    d.hpp
 
 SOURCES += \
     abstractobject.cpp \
     character.cpp \
     h.cpp \
     e.cpp \
-    l.cpp
+    l.cpp \
+    o.cpp \
+    w.cpp \
+    space.cpp \
+    r.cpp \
+    d.cpp
