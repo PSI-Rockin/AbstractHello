@@ -13,7 +13,13 @@ HEADERS += \
     w.hpp \
     space.hpp \
     r.hpp \
-    d.hpp
+    d.hpp \
+    string.hpp \
+    digit.hpp \
+    digit0.hpp \
+    digit1.hpp \
+    number.hpp \
+    digitfactory.hpp
 
 SOURCES += \
     abstractobject.cpp \
@@ -25,4 +31,10 @@ SOURCES += \
     w.cpp \
     space.cpp \
     r.cpp \
-    d.cpp
+    d.cpp \
+    string.cpp \
+    digit.cpp \
+    digit0.cpp \
+    digit1.cpp \
+    number.cpp \
+    digitfactory.cpp

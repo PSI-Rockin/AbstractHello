@@ -1,6 +1,7 @@
 #include <cstdio>
 #include "abstractobject.hpp"
 #include "alphabet.hpp"
+#include "number.hpp"
 
 AbstractObject::AbstractObject()
 {
@@ -19,28 +20,28 @@ int main(int argc, char** argv)
     R r;
     L l3;
     D d;
-    Character* blorp[11];
-    blorp[0] = &h;
-    blorp[1] = &e;
-    blorp[2] = &l1;
-    blorp[3] = &l2;
-    blorp[4] = &o1;
-    blorp[5] = &space;
-    blorp[6] = &w;
-    blorp[7] = &o2;
-    blorp[8] = &r;
-    blorp[9] = &l3;
-    blorp[10] = &d;
-    printf("%s", blorp[0]->instanceof());
-    printf("%s", blorp[1]->instanceof());
-    printf("%s", blorp[2]->instanceof());
-    printf("%s", blorp[3]->instanceof());
-    printf("%s", blorp[4]->instanceof());
-    printf("%s", blorp[5]->instanceof());
-    printf("%s", blorp[6]->instanceof());
-    printf("%s", blorp[7]->instanceof());
-    printf("%s", blorp[8]->instanceof());
-    printf("%s", blorp[9]->instanceof());
-    printf("%s", blorp[10]->instanceof());
+    Character* blorp[Number(11).instanceof()];
+    blorp[Number(0).instanceof()] = &h;
+    blorp[Number(1).instanceof()] = &e;
+    blorp[Number(2).instanceof()] = &l1;
+    blorp[Number(3).instanceof()] = &l2;
+    blorp[Number(4).instanceof()] = &o1;
+    blorp[Number(5).instanceof()] = &space;
+    blorp[Number(6).instanceof()] = &w;
+    blorp[Number(7).instanceof()] = &o2;
+    blorp[Number(8).instanceof()] = &r;
+    blorp[Number(9).instanceof()] = &l3;
+    blorp[Number(10).instanceof()] = &d;
+    printf("%s", blorp[Number(0).instanceof()]->instanceof());
+    printf("%s", blorp[Number(1).instanceof()]->instanceof());
+    printf("%s", blorp[Number(2).instanceof()]->instanceof());
+    printf("%s", blorp[Number(3).instanceof()]->instanceof());
+    printf("%s", blorp[Number(4).instanceof()]->instanceof());
+    printf("%s", blorp[Number(5).instanceof()]->instanceof());
+    printf("%s", blorp[Number(6).instanceof()]->instanceof());
+    printf("%s", blorp[Number(7).instanceof()]->instanceof());
+    printf("%s", blorp[Number(8).instanceof()]->instanceof());
+    printf("%s", blorp[Number(9).instanceof()]->instanceof());
+    printf("%s", blorp[Number(10).instanceof()]->instanceof());
     printf("\n");
 }
